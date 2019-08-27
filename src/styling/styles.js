@@ -126,6 +126,18 @@ export default StyleSheet.create({
         paddingLeft: 10,
         borderBottomRightRadius: 5,
         borderBottomLeftRadius: 5,
+    },
+    //home css
+    // header customization
+    menuImage:{
+        height: 12,
+        width: 16,
+        marginTop: 20,
+        marginBottom: 20,
+        marginLeft: 18
     }
+    
+
 })
+
 

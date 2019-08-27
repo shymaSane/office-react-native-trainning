@@ -1,33 +1,41 @@
 import React, { Component } from "react";
 import {
-  StyleSheet,
   View,
   Text,
-  Button
+  Button,
+  Image,
+  TouchableOpacity
 } from 'react-native';
+import styles from '../styling/styles'
 
 
 class HomeScreen extends Component {
     render() {
         return (
-            <View style = {styles.container}>
-                <Text style = {styles.heading}>Welcome Home</Text>
+            <View>
+                <Text >Welcome Home</Text>
                 <Button title="Products" onPress={() => this.props.navigation.navigate('Products')} /> 
             </View>
         );
     }
+
+    static navigationOptions = ({navigation}) => ({
+        headerStyle: {
+            elevation: 0,
+            shadowOpacity: 0
+          },
+          headerLeft:
+            <View>
+                <TouchableOpacity onPress = {() => alert('Drawer open')}>
+                    <Image source = {require('../../assets/images/menu.png')} 
+                    style={styles.menuImage}
+                    />
+                </TouchableOpacity>
+            </View>
+    })
+
 }
 
-const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    heading: {
-        fontSize: 18,
-        textAlign: 'center'
-    }
-})
+
 
 export default HomeScreen;
