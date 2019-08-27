@@ -67,7 +67,8 @@ export default StyleSheet.create({
         marginTop: 60,
         marginLeft: 130,
         marginRight: 130,
-        marginBottom: 40
+        marginBottom: 40,
+        borderRadius:50,
     },
     loginButton:{
         fontFamily: 'Montserrat',

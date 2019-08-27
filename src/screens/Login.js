@@ -70,8 +70,8 @@ class LoginScreen extends Component {
                         </TouchableOpacity>
                     </View>
                     <View>
-                        <Text style={styles.signupLoginMessage}>New To Masafat?
-                            <Text style={styles.signupReminder} onPress={() => this.props.navigation.navigate('Signup')}> Signup here</Text>
+                        <Text style={styles.signupLoginMessage}>You Have account?
+                            <Text style={styles.signupReminder} onPress={() => this.props.navigation.navigate('Signup')}> Login here</Text>
                         </Text>
                     </View>
                 </View>
