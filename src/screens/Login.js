@@ -23,6 +23,8 @@ class SignupScreen extends Component {
 
     login = (email, password, fullName) => {
         alert(`email: ${email}, passowrd:${password}, fullName: ${fullName}`)
+        //redirect to home
+        this.props.navigation.navigate('Home')
     }
 
     render() {
