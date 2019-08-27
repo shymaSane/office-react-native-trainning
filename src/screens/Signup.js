@@ -71,7 +71,7 @@ class LoginScreen extends Component {
                     </View>
                     <View>
                         <Text style={styles.loginMessage}>You Have an account?
-                            <Text style={styles.loginReminder} onPress={() => this.props.navigation.navigate('Signup')}> Login here</Text>
+                            <Text style={styles.loginReminder} onPress={() => this.props.navigation.navigate('Login')}> Login here</Text>
                         </Text>
                     </View>
                 </View>
