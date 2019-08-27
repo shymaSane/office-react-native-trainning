@@ -12,15 +12,6 @@ import styles from '../styling/styles'
 
 class HomeScreen extends Component {
 
-    // state = {
-    //     search: ''
-    // }
-
-    // //search input changing function
-    // changeSearch = () => {
-    //     const {search} = this.state
-    // }
-
     render() {
         return (
             <View>
@@ -30,32 +21,18 @@ class HomeScreen extends Component {
         );
     }
 
-    static navigationOptions = ({navigation}) => ({
-        headerStyle: {
-            elevation: 0,
-            shadowOpacity: 0
-          },
-        headerLeft:
-            <View>
-                <TouchableOpacity onPress = {() => this.props.navigation.openDrawer()}>
-                    <Image source = {require('../../assets/images/menu.png')} 
-                    style={styles.menuImage}
-                    />
-                </TouchableOpacity>
-            </View>,
-        // headerTitle:
-        //     <View style={styles.signupFirstInput}>
-        //         <Image source={require('../../assets/images/search.png')}  style={styles.signupMailImage}/>
-        //         <TextInput
-        //         allowFontScaling={false}
-        //         style = {{flex:1}}
-        //         placeholder="Email"
-        //         onChangeText = {(text) => this.setState({search: text})}
-        //         value = {this.this.state.search}
-        //         />
-        //     </View>
+    static navigationOptions ={
+            header: null
+            // <View>
+            //     <TouchableOpacity onPress = {() => this.props.navigation.openDrawer()}>
+            //         <Image source = {require('../../assets/images/menu.png')} 
+            //         style={styles.menuImage}
+            //         />
+            //     </TouchableOpacity>
+            // </View>,
 
-    })
+
+    }
 
 }
 
