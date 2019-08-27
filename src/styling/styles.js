@@ -71,7 +71,6 @@ export default StyleSheet.create({
         marginLeft: 130,
         marginRight: 130,
         marginBottom: 40,
-        borderRadius:50,
     },
     signupButton:{
         backgroundColor: '#DE4D4F',
@@ -113,8 +112,6 @@ export default StyleSheet.create({
         marginLeft: 130,
         marginRight: 130,
         marginBottom: 40,
-        borderRadius:50,
-       
     },
     loginSecondInput:{
         flexDirection: 'row',

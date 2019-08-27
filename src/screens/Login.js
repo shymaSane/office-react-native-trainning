@@ -11,10 +11,9 @@ import {
   TouchableWithoutFeedback, 
 } from 'react-native';
 import styles from '../styling/styles'
-import { throwStatement } from "@babel/types";
 
 
-class LoginScreen extends Component {
+class SignupScreen extends Component {
 
     state = {
         email: '',
@@ -31,7 +30,7 @@ class LoginScreen extends Component {
         return (
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.containerSignup}>
-                        <Image style={styles.logoSignupImage} source = {require('../../assets/images/logo.png')} />
+                    <Image style={styles.loginLogoImage} source = {require('../../assets/images/logo.png')} />
                     <View>
                         <View style={styles.signupFirstInput}>
                             <Image source={require('../../assets/images/mail.png')}  style={styles.signupMailImage}/>
@@ -43,7 +42,7 @@ class LoginScreen extends Component {
                             value = {email}
                             />
                         </View>
-                        <View style={styles.signupSecondInput}>
+                        <View style={styles.loginSecondInput}>
                             <Image source={require('../../assets/images/lock.png')}  style={styles.signupLockImage}/>
                             <TextInput
                             style={{flex: 1}}
@@ -52,26 +51,16 @@ class LoginScreen extends Component {
                             value = {password}
                             />
                         </View>
-                        <View style={styles.signupThirdInput}>
-                            <Image source={require('../../assets/images/person.png')}  style={styles.signupLockImage}/>
-                            <TextInput
-                            style = {{flex: 1}}
-                            placeholder="Full Name"
-                            onChangeText = {(text) => this.setState({fullName: text})}
-                            value = {fullName}
-                            />
-                        </View>
-                        
                         <TouchableOpacity
                             style = {styles.signupButton}
                             onPress = {() => this.login(email, password, fullName)}
                             >
-                            <Text style={styles.signupButtonText}>Sign Up</Text>
+                            <Text style={styles.signupButtonText}>Log In</Text>
                         </TouchableOpacity>
                     </View>
                     <View>
-                        <Text style={styles.loginMessage}>You Have an account?
-                            <Text style={styles.loginReminder} onPress={() => this.props.navigation.navigate('Signup')}> Login here</Text>
+                        <Text style={styles.loginMessage}>You Don't have an account?
+                            <Text style={styles.loginReminder} onPress={() => this.props.navigation.navigate('Signup')}> Signup here</Text>
                         </Text>
                     </View>
                 </View>
@@ -85,4 +74,4 @@ class LoginScreen extends Component {
 
 }
 
-export default LoginScreen;
+export default SignupScreen;
