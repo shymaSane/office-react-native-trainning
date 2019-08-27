@@ -50,6 +50,7 @@ class LoginScreen extends Component {
                             placeholder="Password"
                             onChangeText = {(text) => this.setState({password: text})}
                             value = {password}
+                            secureTextEntry={true}
                             />
                         </View>
                         <View style={styles.signupThirdInput}>

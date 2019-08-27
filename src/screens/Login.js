@@ -51,6 +51,7 @@ class SignupScreen extends Component {
                             placeholder="Password"
                             onChangeText = {(text) => this.setState({password: text})}
                             value = {password}
+                            secureTextEntry={true}
                             />
                         </View>
                         <TouchableOpacity
