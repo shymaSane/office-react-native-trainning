@@ -6,6 +6,7 @@ export default StyleSheet.create({
         justifyContent: 'center',
     },
     loginFirstInput:{
+        fontFamily: 'Montserrat',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
@@ -63,14 +64,14 @@ export default StyleSheet.create({
         width: 110,
         height: 110,
         alignSelf: 'center',
-        // marginTop: 40,
+        marginTop: 60,
         marginLeft: 130,
         marginRight: 130,
         marginBottom: 40
     },
     loginButton:{
+        fontFamily: 'Montserrat',
         backgroundColor: '#DE4D4F',
-        // boxShadow: 10px 5px 5px black;
         marginTop: 30,
         marginBottom: 10,
         marginLeft:70,
@@ -78,6 +79,9 @@ export default StyleSheet.create({
         paddingTop: 12,
         paddingBottom: 12,
         borderRadius:50,
+        shadowColor: 'black',
+        shadowOpacity: .6,
+        elevation: 3,
     },
     loginButtonText:{
         color: 'white',

@@ -31,10 +31,10 @@ class LoginScreen extends Component {
         return (
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.containerLogin}>
-                    <Image style={styles.logoLoginImage} source = {require('../assets/images/logo.png')} />
+                    <Image style={styles.logoLoginImage} source = {require('../../assets/images/logo.png')} />
                     <View>
                         <View style={styles.loginFirstInput}>
-                            <Image source={require('../assets/images/mail.png')}  style={styles.loginMailImage}/>
+                            <Image source={require('../../assets/images/mail.png')}  style={styles.loginMailImage}/>
                             <TextInput
                             allowFontScaling={false}
                             style = {{flex:1}}
@@ -44,7 +44,7 @@ class LoginScreen extends Component {
                             />
                         </View>
                         <View style={styles.loginSecondInput}>
-                            <Image source={require('../assets/images/lock.png')}  style={styles.loginLockImage}/>
+                            <Image source={require('../../assets/images/lock.png')}  style={styles.loginLockImage}/>
                             <TextInput
                             style={{flex: 1}}
                             placeholder="Password"
@@ -53,7 +53,7 @@ class LoginScreen extends Component {
                             />
                         </View>
                         <View style={styles.loginThirdInput}>
-                            <Image source={require('../assets/images/person.png')}  style={styles.loginLockImage}/>
+                            <Image source={require('../../assets/images/person.png')}  style={styles.loginLockImage}/>
                             <TextInput
                             style = {{flex: 1}}
                             placeholder="Full Name"
