@@ -30,11 +30,11 @@ class LoginScreen extends Component {
         const {email, password, fullName} = this.state
         return (
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-                <View style={styles.containerLogin}>
-                    <Image style={styles.logoLoginImage} source = {require('../../assets/images/logo.png')} />
+                <View style={styles.containerSignup}>
+                        <Image style={styles.logoSignupImage} source = {require('../../assets/images/logo.png')} />
                     <View>
-                        <View style={styles.loginFirstInput}>
-                            <Image source={require('../../assets/images/mail.png')}  style={styles.loginMailImage}/>
+                        <View style={styles.signupFirstInput}>
+                            <Image source={require('../../assets/images/mail.png')}  style={styles.signupMailImage}/>
                             <TextInput
                             allowFontScaling={false}
                             style = {{flex:1}}
@@ -43,8 +43,8 @@ class LoginScreen extends Component {
                             value = {email}
                             />
                         </View>
-                        <View style={styles.loginSecondInput}>
-                            <Image source={require('../../assets/images/lock.png')}  style={styles.loginLockImage}/>
+                        <View style={styles.signupSecondInput}>
+                            <Image source={require('../../assets/images/lock.png')}  style={styles.signupLockImage}/>
                             <TextInput
                             style={{flex: 1}}
                             placeholder="Password"
@@ -52,8 +52,8 @@ class LoginScreen extends Component {
                             value = {password}
                             />
                         </View>
-                        <View style={styles.loginThirdInput}>
-                            <Image source={require('../../assets/images/person.png')}  style={styles.loginLockImage}/>
+                        <View style={styles.signupThirdInput}>
+                            <Image source={require('../../assets/images/person.png')}  style={styles.signupLockImage}/>
                             <TextInput
                             style = {{flex: 1}}
                             placeholder="Full Name"
@@ -63,15 +63,15 @@ class LoginScreen extends Component {
                         </View>
                         
                         <TouchableOpacity
-                            style = {styles.loginButton}
+                            style = {styles.signupButton}
                             onPress = {() => this.login(email, password, fullName)}
                             >
-                            <Text style={styles.loginButtonText}>Sign Up</Text>
+                            <Text style={styles.signupButtonText}>Sign Up</Text>
                         </TouchableOpacity>
                     </View>
                     <View>
-                        <Text style={styles.signupLoginMessage}>You Have account?
-                            <Text style={styles.signupReminder} onPress={() => this.props.navigation.navigate('Signup')}> Login here</Text>
+                        <Text style={styles.loginMessage}>You Have an account?
+                            <Text style={styles.loginReminder} onPress={() => this.props.navigation.navigate('Signup')}> Login here</Text>
                         </Text>
                     </View>
                 </View>

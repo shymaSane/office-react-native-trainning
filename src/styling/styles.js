@@ -1,12 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-    containerLogin : {
+    containerSignup : {
         flex: 1,
         justifyContent: 'center',
     },
-    loginFirstInput:{
-        fontFamily: 'Montserrat',
+    //mostly signup css
+    signupFirstInput:{
+        fontFamily: 'Montserrat-Medium',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
@@ -20,14 +21,15 @@ export default StyleSheet.create({
         borderTopLeftRadius: 5,
         borderTopRightRadius: 5,
     },
-    loginMailImage:{
+    signupMailImage:{
         margin: 5,
         height: 12,
         width: 20,
         resizeMode : 'stretch',
         alignItems: 'center'
     },
-    loginSecondInput:{
+    signupSecondInput:{
+        fontFamily: 'Montserrat-Medium',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
@@ -39,14 +41,15 @@ export default StyleSheet.create({
         padding: 5,
         paddingLeft: 10
     },
-    loginLockImage:{
+    signupLockImage:{
         margin: 5,
         height: 18,
         width: 15,
         resizeMode : 'stretch',
         alignItems: 'center'
     },
-    loginThirdInput:{
+    signupThirdInput:{
+        fontFamily: 'Montserrat-Medium',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
@@ -60,18 +63,17 @@ export default StyleSheet.create({
         borderBottomRightRadius: 5,
         borderBottomLeftRadius: 5,
     },    
-    logoLoginImage:{
-        width: 110,
+    logoSignupImage:{
+        width: 120,
         height: 110,
         alignSelf: 'center',
-        marginTop: 60,
+        marginTop: 50,
         marginLeft: 130,
         marginRight: 130,
         marginBottom: 40,
         borderRadius:50,
     },
-    loginButton:{
-        fontFamily: 'Montserrat',
+    signupButton:{
         backgroundColor: '#DE4D4F',
         marginTop: 30,
         marginBottom: 10,
@@ -82,21 +84,51 @@ export default StyleSheet.create({
         borderRadius:50,
         shadowColor: 'black',
         shadowOpacity: .6,
-        elevation: 3,
+        elevation: 5,
     },
-    loginButtonText:{
+    signupButtonText:{
+        fontFamily: 'Montserrat-Medium',
         color: 'white',
+        fontSize: 12,
         textAlign:'center',
         letterSpacing: 1,
         opacity: 0.9
     },
-    signupLoginMessage:{
+    loginMessage:{
+        fontFamily: 'Montserrat-Medium',
+        fontSize: 12,
         alignSelf: 'center',
         color: 'silver',
-        letterSpacing: 1,
+        opacity: .8
     },
-    signupReminder:{
+    loginReminder:{
         color: '#DE4D4F'
+    },
+    //login css
+    loginLogoImage:{
+        width: 130,
+        height: 130,
+        alignSelf: 'center',
+        marginTop: 60,
+        marginLeft: 130,
+        marginRight: 130,
+        marginBottom: 40,
+        borderRadius:50,
+       
+    },
+    loginSecondInput:{
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: 50,
+        backgroundColor: '#EFEFEF',
+        marginBottom: 1,
+        marginLeft: 40,
+        marginRight: 40,
+        padding: 5,
+        paddingLeft: 10,
+        borderBottomRightRadius: 5,
+        borderBottomLeftRadius: 5,
     }
 })
 
