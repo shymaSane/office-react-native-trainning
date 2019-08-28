@@ -52,6 +52,15 @@ class Header extends Component {
                     value = {search}
                     />
                 </View>
+                {/* TODO: filter Darwer */}
+                <View>
+                    <TouchableOpacity style={styles.filterImage}> 
+                        <Image source = {require('../../assets/images/filter.png')} 
+                        style={{height: 14, width: 16}}
+                        // onPress = {() => alert('open filter')}
+                        />
+                    </TouchableOpacity>
+                </View>
             
             </View>
         );

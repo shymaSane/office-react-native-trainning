@@ -163,7 +163,6 @@ export default StyleSheet.create({
         marginLeft: 11,
         marginTop: 10, 
         marginBottom: 9,
-        marginRight: 60,
         borderRadius: 5
     },
     searchImage:{
@@ -175,6 +174,14 @@ export default StyleSheet.create({
         marginRight: 9,
         resizeMode : 'stretch',
         alignItems: 'center'
+    },
+    filterImage:{
+        height: 16,
+        width: 14,
+        marginTop: 20,
+        marginBottom: 19,
+        marginRight: 28,
+        marginLeft: 16
     }
     
   
