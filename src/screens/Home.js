@@ -8,6 +8,7 @@ import {
   TextInput
 } from 'react-native';
 import styles from '../styling/styles'
+import Header from './Header'
 
 
 class HomeScreen extends Component {
@@ -15,8 +16,7 @@ class HomeScreen extends Component {
     render() {
         return (
             <View>
-                <Text >Welcome Home</Text>
-                <Button title="Products" onPress={() => this.props.navigation.navigate('Products')} /> 
+                <Header />
             </View>
         );
     }

@@ -129,6 +129,14 @@ export default StyleSheet.create({
     },
     //home css
     // header customization
+    headerCntainer: {
+        height: 53,
+        borderWidth: 1
+    },
+    menuImageContaner:{
+        height: 12,
+        width: 16,
+    },
     menuImage:{
         height: 12,
         width: 16,
