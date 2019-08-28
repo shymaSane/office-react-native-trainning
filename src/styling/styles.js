@@ -114,6 +114,7 @@ export default StyleSheet.create({
         marginBottom: 40,
     },
     loginSecondInput:{
+        fontFamily: 'Montserrat-Medium',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
@@ -131,11 +132,8 @@ export default StyleSheet.create({
     // header customization
     headerCntainer: {
         height: 53,
-        borderWidth: 1
-    },
-    menuImageContaner:{
-        height: 12,
-        width: 16,
+        flex: 1,
+        flexDirection: 'row'
     },
     menuImage:{
         height: 12,
@@ -143,7 +141,43 @@ export default StyleSheet.create({
         marginTop: 20,
         marginBottom: 20,
         marginLeft: 18
+    },
+    profileImageHome:{
+        width: 34,
+        height: 34,
+        borderRadius: 50,
+        //TODO remove when you have dynamic profile pic
+        backgroundColor: '#DE4D4F',
+        marginTop: 10,
+        marginBottom: 9,
+        marginLeft:27
+    },
+    searchInput:{
+        fontFamily: 'Montserrat-Medium',
+        height: 34,
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#EFEFEF',
+        marginLeft: 11,
+        marginTop: 10, 
+        marginBottom: 9,
+        marginRight: 60,
+        borderRadius: 5
+    },
+    searchImage:{
+        width: 13,
+        height: 13,
+        marginTop: 11, 
+        marginBottom:10, 
+        marginLeft: 9,
+        marginRight: 9,
+        resizeMode : 'stretch',
+        alignItems: 'center'
     }
+    
+  
     
 
 })

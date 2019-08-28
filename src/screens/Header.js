@@ -12,7 +12,15 @@ import styles from '../styling/styles'
 
 class Header extends Component {
 
+    state={
+        search:''
+    }
+
+    onSearch = (search) =>{
+        alert(`${search}`)
+    }
     render() {
+        const {search} = this.state
         return (
             <View style = {styles.headerCntainer}>
                 <View>
@@ -23,7 +31,28 @@ class Header extends Component {
                         />
                     </TouchableOpacity>
                 </View>
-
+                {/* TODO: Dynamic profile pciture */}
+                <View>
+                    <TouchableOpacity style = {styles.profileImageHome}>
+                        <Image  />
+                    </TouchableOpacity>
+                </View>
+                {/* search input */}
+                <View style={styles.searchInput}>
+                    <TouchableOpacity onPress={() => this.onSearch(search)}>
+                        <Image source={require('../../assets/images/search.png')}
+                         style={styles.searchImage}
+                         
+                         />
+                    </TouchableOpacity>
+                    <TextInput
+                    style={{flex: 1}}
+                    placeholder="Search Masafat"
+                    onChangeText = {(text) => this.setState({search: text})}
+                    value = {search}
+                    />
+                </View>
+            
             </View>
         );
     }
