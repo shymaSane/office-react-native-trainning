@@ -132,7 +132,7 @@ export default StyleSheet.create({
     // header customization
     headerCntainer: {
         height: 53,
-        flex: 1,
+        width: '100%',
         flexDirection: 'row'
     },
     menuImage:{
@@ -182,6 +182,39 @@ export default StyleSheet.create({
         marginBottom: 19,
         marginRight: 28,
         marginLeft: 16
+    },
+    //categories
+    categoriesContainer: {
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent:'space-around',
+        alignItems: 'center', 
+        marginTop: 21,
+        marginBottom: 30
+    },
+    categoryContainer:{
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    imageCategoryStyle: {
+        resizeMode:'contain',
+        height: 50,
+        width: 50,
+        borderRadius: 50
+    },
+    categoryImageShadow:{
+        height: 50,
+        width: 50,
+        borderRadius: 50,
+        elevation: 15,
+        opacity: .8
+    },
+    categoriesText: {
+        fontFamily: 'Montserrat-ExtraLight',
+        color: '#aeaeaeff',
+        fontSize: 12,
+        marginTop: 14
     }
     
   
