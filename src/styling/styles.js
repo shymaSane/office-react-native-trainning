@@ -1,4 +1,5 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
+
 
 export default StyleSheet.create({
   containerSignup: {
@@ -220,12 +221,14 @@ export default StyleSheet.create({
   // Image gallery
   imageGalleryConatiner:{
     flex:1,
-    marginBottom: 7
+    paddingTop:7,
+    paddingLeft: 7
   },
   gallerysImage:{
     height: 200,
-    marginTop: 7,
+    width: Dimensions.get('window').width/2-14,
     marginBottom: 7,
-    marginRight: 7
+    marginRight: 7,
+    borderRadius: 5
   }
 });

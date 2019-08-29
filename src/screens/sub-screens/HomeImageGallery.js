@@ -3,10 +3,11 @@ import {
   View,
   Image, 
   FlatList,
-  Dimensions
 } from 'react-native';
+import styles from '../../styling/styles'
 
-const ITEM_WIDTH = (Dimensions.get('window').width/2)
+
+
 
 class HomeImageGallery extends Component {
     state = {
@@ -27,12 +28,12 @@ class HomeImageGallery extends Component {
     }
   render() {
     return (               
-        <View style={{marginBottom: 10, flex: 1}}>
+        <View style={styles.imageGalleryConatiner}>
             <FlatList
             numColumns={2}
             data={this.state.data}
             renderItem = {({item}) => 
-               <Image style = {{width: ITEM_WIDTH-14, height: 200, margin: 7, borderRadius: 5}} source = {item}/>
+               <Image style = {styles.gallerysImage} source = {item}/>
             }
             keyExtractor={(item, index) => index}
             />
