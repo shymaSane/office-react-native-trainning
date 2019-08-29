@@ -22,7 +22,7 @@ class Header extends Component {
     render() {
         const {search} = this.state
         return (
-            <View style = {styles.headerCntainer}>
+            <View style = {styles.headerContainer}>
                 <View>
                     <TouchableOpacity style={styles.menuImage}> 
                         <Image source = {require('../../assets/images/menu.png')} 
@@ -46,7 +46,7 @@ class Header extends Component {
                          />
                     </TouchableOpacity>
                     <TextInput
-                    style={{flex: 1}}
+                    style={styles.textSearchInput}
                     placeholder="Search Masafat"
                     onChangeText = {(text) => this.setState({search: text})}
                     value = {search}
