@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 import HomeCategories from './sub-screens/HomeCategories'
 import Header from './sub-screens/Header';
+import HomeImageGallery from './sub-screens/HomeImageGallery'
 
 class HomeScreen extends Component {
   render() {
@@ -12,6 +13,7 @@ class HomeScreen extends Component {
         <Header />
         {/* categories */}
         <HomeCategories />
+        <HomeImageGallery />
       </View>
     );
   }
