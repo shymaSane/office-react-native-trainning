@@ -7,7 +7,7 @@ import {
   TextInput,
   TouchableOpacity
 } from 'react-native';
-import styles from '../styling/styles'
+import styles from '../../styling/styles'
 
 
 class Header extends Component {
@@ -25,7 +25,7 @@ class Header extends Component {
             <View style = {styles.headerContainer}>
                 <View>
                     <TouchableOpacity style={styles.menuImage}> 
-                        <Image source = {require('../../assets/images/menu.png')} 
+                        <Image source = {require('../../../assets/images/menu.png')} 
                         style={{height: 12, width: 16}}
                         onPress = {() => this.props.navigation.openDrawer()}
                         />
@@ -40,7 +40,7 @@ class Header extends Component {
                 {/* search input */}
                 <View style={styles.searchInput}>
                     <TouchableOpacity onPress={() => this.onSearch(search)}>
-                        <Image source={require('../../assets/images/search.png')}
+                        <Image source={require('../../../assets/images/search.png')}
                          style={styles.searchImage}
                          
                          />
@@ -55,7 +55,7 @@ class Header extends Component {
                 {/* TODO: filter Darwer */}
                 <View>
                     <TouchableOpacity style={styles.filterImage}> 
-                        <Image source = {require('../../assets/images/filter.png')} 
+                        <Image source = {require('../../../assets/images/filter.png')} 
                         style={{height: 14, width: 16}}
                         // onPress = {() => alert('open filter')}
                         />
@@ -68,7 +68,7 @@ class Header extends Component {
 
 
 }
-
+// 
 
 
 export default Header;
