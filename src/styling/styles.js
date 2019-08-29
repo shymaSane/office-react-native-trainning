@@ -217,4 +217,15 @@ export default StyleSheet.create({
     fontSize: 12,
     marginTop: 14,
   },
+  // Image gallery
+  imageGalleryConatiner:{
+    flex:1,
+    marginBottom: 7
+  },
+  gallerysImage:{
+    height: 200,
+    marginTop: 7,
+    marginBottom: 7,
+    marginRight: 7
+  }
 });
