@@ -7,12 +7,12 @@ import {
 } from 'react-native';
 
 
-class ProductsScreen extends Component {
+class NotificationsScreen extends Component {
     render() {
         return (
             <View style = {styles.container}>
-                <Text style = {styles.heading}>All Products</Text>
-                <Button title="Home" onPress={() => this.props.navigation.navigate('Home')} /> 
+                <Text style = {styles.heading}>Notifications </Text>
+                <Button title="Notificationas" onPress={() => this.props.navigation.navigate('Home')} /> 
             </View>
         );
     }
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default ProductsScreen;
+export default NotificationsScreen;

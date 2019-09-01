@@ -11,8 +11,8 @@ class ChatScreen extends Component {
     render() {
         return (
             <View style = {styles.container}>
-                <Text style = {styles.heading}>Add Products</Text>
-                <Button title="Home" onPress={() => this.props.navigation.navigate('Home')} /> 
+                <Text style = {styles.heading}>Chat</Text>
+                <Button title="chat" onPress={() => this.props.navigation.navigate('Home')} /> 
             </View>
         );
     }

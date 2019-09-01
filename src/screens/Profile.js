@@ -7,12 +7,12 @@ import {
 } from 'react-native';
 
 
-class AddProductScreen extends Component {
+class ProfileScreen extends Component {
     render() {
         return (
             <View style = {styles.container}>
-                <Text style = {styles.heading}>Add Products</Text>
-                <Button title="Add product" onPress={() => this.props.navigation.navigate('Home')} /> 
+                <Text style = {styles.heading}>Profile</Text>
+                <Button title="profile" onPress={() => this.props.navigation.navigate('Home')} /> 
             </View>
         );
     }
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default AddProductScreen;
+export default ProfileScreen;
