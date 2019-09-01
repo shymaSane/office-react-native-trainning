@@ -1,17 +1,16 @@
 import React, {Component} from 'react';
 import {
   View,
-  Text,
-  Button,
   Image,
   TextInput,
   TouchableOpacity,
   TouchableWithoutFeedback,
-  Keyboard
+  Keyboard,
 } from 'react-native';
 import styles from '../../styling/styles';
 
 class Header extends Component {
+
   state = {
     search: '',
   };
@@ -25,11 +24,11 @@ class Header extends Component {
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
         <View style={styles.headerContainer}>
           <View>
-            <TouchableOpacity style={styles.menuImage}>
+            <TouchableOpacity onPress={() => this.props.navigation.toggleDrawer()} style={styles.menuImage}>
               <Image
                 source={require('../../../assets/images/menu.png')}
                 style={{height: 12, width: 16}}
-                onPress={() => this.props.navigation.openDrawer()}
+                
               />
             </TouchableOpacity>
           </View>

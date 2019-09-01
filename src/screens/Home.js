@@ -10,7 +10,7 @@ class HomeScreen extends Component {
   render() {
     return (
       <View style={{flex:1}}>
-        <Header />
+        <Header {...this.props} />
         {/* categories */}
         <HomeCategories />
         <HomeImageGallery />

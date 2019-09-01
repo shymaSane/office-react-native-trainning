@@ -14,20 +14,10 @@ import NotificationsScreen from './src/screens/Notifications';
 import ProfileScreen from './src/screens/Profile';
 import LogoutScreen from './src/screens/Logout';
 import AddProductScreen from './src/screens/AddProduct';
+import DrawerMenu from './src/screens/sub-screens/DarwerMenu';
 
 const HomeNavigator = createStackNavigator({
   Home: HomeScreen,
-  AddProduct: AddProductScreen,
-  Chat: ChatScreen,
-  Notifications: NotificationsScreen,
-  Categories: CategoriesScreen,
-  Profile: ProfileScreen,
-  Hlep: HelpScreen,
-  Logout: LogoutScreen,
-});
-
-const HomeDrawerNavigator = createDrawerNavigator({
-  HomePage: HomeNavigator,
 });
 
 const AuthNavigator = createStackNavigator(
@@ -38,6 +28,21 @@ const AuthNavigator = createStackNavigator(
   {
     initialRouteName: 'Login',
   },
+);
+
+const HomeDrawerNavigator = createDrawerNavigator({
+  HomePage: HomeNavigator,
+  AddProduct: AddProductScreen,
+  Chat: ChatScreen,
+  Notifications: NotificationsScreen,
+  Categories: CategoriesScreen,
+  Profile: ProfileScreen,
+  Help: HelpScreen,
+  Logout: LogoutScreen,
+},
+{
+  contentComponent: DrawerMenu,
+}
 );
 
 const MainNavigator = createSwitchNavigator(

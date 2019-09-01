@@ -1,6 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
 
-
 export default StyleSheet.create({
   containerSignup: {
     flex: 1,
@@ -155,7 +154,7 @@ export default StyleSheet.create({
   searchInput: {
     fontFamily: 'Montserrat-Medium',
     flexDirection: 'row',
-    width: "50%",
+    width: '50%',
     height: 34,
     backgroundColor: '#EFEFEF',
     marginLeft: 11,
@@ -183,7 +182,7 @@ export default StyleSheet.create({
   },
   textSearchInput: {
     paddingVertical: 0,
-    flex: 1, 
+    flex: 1,
   },
   //categories
   categoriesContainer: {
@@ -219,16 +218,60 @@ export default StyleSheet.create({
     marginTop: 14,
   },
   // Image gallery
-  imageGalleryConatiner:{
-    flex:1,
-    paddingTop:7,
-    paddingLeft: 7
+  imageGalleryConatiner: {
+    flex: 1,
+    paddingTop: 7,
+    paddingLeft: 7,
   },
-  gallerysImage:{
+  gallerysImage: {
     height: 200,
-    width: Dimensions.get('window').width/2-14,
+    width: Dimensions.get('window').width / 2 - 14,
     marginBottom: 7,
     marginRight: 7,
-    borderRadius: 5
-  }
+    borderRadius: 5,
+  },
+  // Home Menu Styling
+  menuProfile: {
+    width: '100%',
+    flex: 1 / 3,
+  },
+  profileBackgroundImage: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#DE4D4F',
+    
+  },
+  menuProfileContainer: {
+    flex:1,
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    marginLeft: 21,
+    
+  },
+  profileImageMenuConatiner: {
+    width: 70,
+    height: 70,
+    marginBottom: 14,
+    borderRadius: 50,
+    borderWidth: 4,
+    borderColor: 'white',
+  },
+  profileImageMenu: {
+    width: 62,
+    height: 62,
+    resizeMode: 'cover',
+    borderRadius: 50,
+  },
+  menuProfileText1:{
+    fontFamily: 'Montserrat-SemiBold',
+    fontSize: 14,
+    color: 'white',
+    marginBottom: 4,
+  },
+  menuProfileText2:{
+    fontFamily: 'Montserrat-Medium',
+    fontSize: 14,
+    color: 'white',
+    marginBottom: 4,
+  },
 });
