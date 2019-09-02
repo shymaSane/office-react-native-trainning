@@ -140,7 +140,7 @@ const HomeDrawerNavigator = createDrawerNavigator(
         fontWeight: 'normal',
         fontFamily: 'Montserrat-Medium',
         color: '#9a9a9aff',
-        fontSize: 12,
+        fontSize: 14,
       },
     },
   },

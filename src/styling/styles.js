@@ -246,6 +246,8 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'flex-start',
     marginLeft: 21,
+    marginTop: 32,
+    marginBottom: 32
     
   },
   profileImageMenu: {
@@ -260,65 +262,16 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Medium',
     fontSize: 14,
     color: 'white',
-    marginBottom: 4,
-    marginTop: 14,
-
   },
   menuProfileText2:{
     fontFamily: 'Montserrat-Regular',
     fontSize: 14,
     color: '#DCDCDC',
-    letterSpacing: 1
+    letterSpacing: 1,
   },
-  // menu list 
-  menulistContainer:{
-    flex: 2/3,
-    width: "100%",
-    marginTop: 20,
-    marginLeft: 21,
-    marginBottom: 24,
-    justifyContent: 'space-between'
-  },
-  menuItemContainer:{
-    flexDirection: 'row', 
-    justifyContent: 'flex-start',
-    alignItems:'center'
-  }, 
-  MenuItemIconHome:{
-    width: 22, 
-    height: 22
-  },
-  MenuItemIconCamera:{
-    width: 19, 
-    height: 18
-  },
-  MenuItemIconChat:{
-    width: 19, 
-    height: 19
-  },
-  MenuItemIconNote:{
-    width: 16, 
-    height: 16,
-    
-  },
-  MenuItemIconCate:{
-    width: 16, 
-    height: 16
-  },
-  MenuItemIconProfile:{
-    width: 14, 
-    height: 17
-  },
-  MenuItemIconHelp:{
-    width: 17, 
-    height: 17,
-  },
-  menuItemText: {
-    fontFamily: 'Montserrat-Medium',
-    fontSize: 12,
-    color: '#9a9a9aff',
-    marginLeft: 16,
-    letterSpacing: 1
-  },
- 
+  menuProfileTextContainer:{
+    marginBottom: 4,
+    marginTop: 14,
+  }
+
 });

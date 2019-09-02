@@ -14,7 +14,6 @@ import styles from '../../styling/styles';
 
 class DrawerMenu extends Component {
   render() {
-    const {navigate} = this.props.navigation;
     return (
       <ScrollView>
         <SafeAreaView
@@ -25,14 +24,18 @@ class DrawerMenu extends Component {
             <ImageBackground
               source={require('../../../assets/images/profileBackground.png')}
               style={styles.profileBackgroundImage}>
-              <TouchableOpacity style={styles.menuProfileContainer}>
+              <View style={styles.menuProfileContainer}>
+                <TouchableOpacity>
                 <Image
                   style={styles.profileImageMenu}
                   source={require('../../../assets/images/mockProfile.png')}
                 />
-                <Text style={styles.menuProfileText1}>Profile Name</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.menuProfileTextContainer}>
+                  <Text style={styles.menuProfileText1}>Profile Name</Text>
+                </TouchableOpacity>
                 <Text style={styles.menuProfileText2}>Location</Text>
-              </TouchableOpacity>
+              </View>
             </ImageBackground>
           </View>
           {/* Menu List */}
