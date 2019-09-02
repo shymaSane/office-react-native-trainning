@@ -298,7 +298,8 @@ export default StyleSheet.create({
   },
   MenuItemIconNote:{
     width: 16, 
-    height: 16
+    height: 16,
+    
   },
   MenuItemIconCate:{
     width: 16, 
@@ -310,13 +311,14 @@ export default StyleSheet.create({
   },
   MenuItemIconHelp:{
     width: 17, 
-    height: 17
+    height: 17,
   },
   menuItemText: {
     fontFamily: 'Montserrat-Medium',
-    fontSize: 14,
+    fontSize: 12,
     color: '#9a9a9aff',
     marginLeft: 16,
     letterSpacing: 1
-  }
+  },
+ 
 });

@@ -1,3 +1,5 @@
+import React from 'react';
+import {Image} from 'react-native';
 import {
   createStackNavigator,
   createSwitchNavigator,
@@ -14,7 +16,7 @@ import NotificationsScreen from './src/screens/Notifications';
 import ProfileScreen from './src/screens/Profile';
 import LogoutScreen from './src/screens/Logout';
 import AddProductScreen from './src/screens/AddProduct';
-import DrawerMenu from './src/screens/sub-screens/DarwerMenu';
+import DrawerMenu from './src/screens/sub-screens/DrawerMenu';
 
 const HomeNavigator = createStackNavigator({
   Home: HomeScreen,
@@ -30,19 +32,118 @@ const AuthNavigator = createStackNavigator(
   },
 );
 
-const HomeDrawerNavigator = createDrawerNavigator({
-  HomePage: HomeNavigator,
-  AddProduct: AddProductScreen,
-  Chat: ChatScreen,
-  Notifications: NotificationsScreen,
-  Categories: CategoriesScreen,
-  Profile: ProfileScreen,
-  Help: HelpScreen,
-  Logout: LogoutScreen,
-},
-{
-  contentComponent: DrawerMenu,
-}
+//Drawer navigator
+HomeNavigator.navigationOptions = {
+  drawerLabel: 'Browse',
+  drawerIcon: ({tintColor}) => (
+    <Image
+      source={require('./assets/images/home.png')}
+      resizeMode="contain"
+      style={{width: 19, height: 19, tintColor: tintColor}}
+    />
+  ),
+};
+AddProductScreen.navigationOptions = {
+  drawerLabel: 'Sell Your Items',
+  drawerIcon: ({tintColor}) => (
+    <Image
+      source={require('./assets/images/camera.png')}
+      resizeMode="contain"
+      style={{width: 19, height: 19,tintColor: tintColor}}
+    />
+  ),
+};
+ChatScreen.navigationOptions = {
+  drawerLabel: 'Chat',
+  drawerIcon: ({tintColor}) => (
+    <Image
+      source={require('./assets/images/chat.png')}
+      resizeMode="contain"
+      style={{width: 19, height: 19, tintColor: tintColor}}
+    />
+  ),
+};
+NotificationsScreen.navigationOptions = {
+  drawerLabel: 'Notifications',
+  drawerIcon: ({tintColor}) => (
+    <Image
+      source={require('./assets/images/notification.png')}
+      resizeMode="contain"
+      style={{width: 19, height: 19, tintColor: tintColor}}
+    />
+  ),
+};
+CategoriesScreen.navigationOptions = {
+  drawerLabel: 'Categories',
+  drawerIcon: ({tintColor}) => (
+    <Image
+      source={require('./assets/images/categories.png')}
+      resizeMode="contain"
+      style={{width: 19, height: 19, tintColor: tintColor}}
+    />
+  ),
+};
+
+ProfileScreen.navigationOptions = {
+  drawerLabel: 'Profile',
+  drawerIcon: ({tintColor}) => (
+    <Image
+      source={require('./assets/images/person.png')}
+      resizeMode="contain"
+      style={{width: 19, height: 19, tintColor: tintColor}}
+    />
+  ),
+};
+
+HelpScreen.navigationOptions = {
+  drawerLabel: 'Help',
+  drawerIcon: ({tintColor}) => (
+    <Image
+      source={require('./assets/images/help.png')}
+      resizeMode="contain"
+      style={{width: 19, height: 19, tintColor: tintColor}}
+    />
+  ),
+};
+
+LogoutScreen.navigationOptions = {
+  drawerLabel: 'Logout',
+  drawerIcon: ({tintColor}) => (
+    <Image
+      source={require('./assets/images/logout.png')}
+      resizeMode="contain"
+      style={{width: 19, height: 19, tintColor: tintColor}}
+    />
+  ),
+};
+
+const HomeDrawerNavigator = createDrawerNavigator(
+  {
+    HomePage: HomeNavigator,
+    AddProduct: AddProductScreen,
+    Chat: ChatScreen,
+    Notifications: NotificationsScreen,
+    Categories: CategoriesScreen,
+    Profile: ProfileScreen,
+    Help: HelpScreen,
+    Logout: LogoutScreen,
+  },
+  {
+    contentComponent: DrawerMenu,
+    contentOptions: {
+      activeTintColor: '#DE4D4F',
+      activeBackgroundColor: 'transparent',
+      activeLabelStyle:{
+        color: '#DE4D4F'
+      },
+      labelStyle: {
+        fontWeight: 'normal',
+        fontFamily: 'Montserrat-Medium',
+        color: '#9a9a9aff',
+        fontSize: 12,
+      },
+    },
+  },
 );
 
 const MainNavigator = createSwitchNavigator(
