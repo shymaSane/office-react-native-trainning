@@ -17,9 +17,14 @@ import ProfileScreen from './src/screens/Profile';
 import LogoutScreen from './src/screens/Logout';
 import AddProductScreen from './src/screens/AddProduct';
 import DrawerMenu from './src/screens/sub-screens/DrawerMenu';
+import FilterScreen from './src/screens/Filter'
 
 const HomeNavigator = createStackNavigator({
   Home: HomeScreen,
+  Filter: FilterScreen
+},
+{
+  initialRouteName: "Home"
 });
 
 const AuthNavigator = createStackNavigator(
