@@ -272,6 +272,47 @@ export default StyleSheet.create({
   menuProfileTextContainer:{
     marginBottom: 4,
     marginTop: 14,
+  },
+  //Filter Styling:
+  filterContainer:{
+    flex: 1,
+    maxWidth: '100%', 
+    marginLeft: 18,
+    marginRight: 23
+  },
+  cateFilterContainer:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems: 'center', 
+    marginTop: 19,
+    marginBottom:22
+  },
+  cateImageFilterContainer:{
+    flexDirection:'row',
+    justifyContent: 'center',
+    alignItems:'center'
+  },
+  cateFilterIcon:{
+    height: 36,
+    width: 36
+  },
+  goBackIcon:{
+    width: 9,
+    height: 16
+  },
+  AllCategoriesTextContainer:{
+    marginLeft: 18
+  },
+  AllCategoriesText:{
+    fontFamily:'Montserrat-Medium', fontSize: 16,
+  },
+  categoriesFilterText:{
+    fontFamily:'Montserrat-Regular', fontSize: 12,
+    color: "#676767"
+  },
+  hrLine:{
+    borderBottomColor: '#DDDDDD',
+    borderBottomWidth: 1,
   }
-
+  
 });

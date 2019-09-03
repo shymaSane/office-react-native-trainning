@@ -20,6 +20,8 @@ import DrawerMenu from './src/screens/sub-screens/DrawerMenu';
 import FilterScreen from './src/screens/Filter'
 
 //home stack navigator
+
+//filter header style
 FilterScreen.navigationOptions = {
   title: 'Filters',
   headerStyle: {
