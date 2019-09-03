@@ -20,6 +20,22 @@ import DrawerMenu from './src/screens/sub-screens/DrawerMenu';
 import FilterScreen from './src/screens/Filter'
 
 //home stack navigator
+FilterScreen.navigationOptions = {
+  title: 'Filters',
+  headerStyle: {
+      elevation:0,
+      shadowOpacity:0,
+  },
+  headerTintColor:'#B1B1B1',
+  headerTitleStyle:{
+      fontFamily: 'Montserrat-Medium',
+      color: '#B1B1B1',
+      fontSize: 16,
+      marginLeft: -11
+  },
+  headerLeft: ({ goBack }) =>
+     ( <Image source={require('./assets/images/goback.png')} onPress={ () => { goBack() } } resizeMode="contain" style={{width: 16, height: 10, marginTop: 22, marginLeft: 18, marginBottom: 21 }} /> ),  
+}
 
 const HomeNavigator = createStackNavigator({
   Home: HomeScreen,
