@@ -36,6 +36,7 @@ class FilterScreen extends Component {
       </View>
     );
   }
+  
 }
 
 export default FilterScreen;

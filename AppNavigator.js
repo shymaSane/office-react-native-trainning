@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image} from 'react-native';
+import {Image, TouchableOpacity} from 'react-native';
 import {
   createStackNavigator,
   createSwitchNavigator,
@@ -17,35 +17,50 @@ import ProfileScreen from './src/screens/Profile';
 import LogoutScreen from './src/screens/Logout';
 import AddProductScreen from './src/screens/AddProduct';
 import DrawerMenu from './src/screens/sub-screens/DrawerMenu';
-import FilterScreen from './src/screens/Filter'
+import FilterScreen from './src/screens/Filter';
 
 //home stack navigator
 
-//filter header style
+//filter nav style
 FilterScreen.navigationOptions = {
   title: 'Filters',
   headerStyle: {
-      elevation:0,
-      shadowOpacity:0,
+    elevation: 0,
+    shadowOpacity: 0,
   },
-  headerTintColor:'#B1B1B1',
-  headerTitleStyle:{
-      fontFamily: 'Montserrat-Medium',
-      color: '#B1B1B1',
-      fontSize: 16,
-      marginLeft: -11
+  headerTintColor: '#B1B1B1',
+  headerTitleStyle: {
+    fontFamily: 'Montserrat-Medium',
+    color: '#B1B1B1',
+    fontSize: 16,
+    marginLeft: -5,
   },
-  headerLeft: ({ goBack }) =>
-     ( <Image source={require('./assets/images/goback.png')} onPress={ () => { goBack() } } resizeMode="contain" style={{width: 16, height: 10, marginTop: 22, marginLeft: 18, marginBottom: 21 }} /> ),  
-}
+  // headerLeft: ({navigation}) => (
+  //   <TouchableOpacity onPress={navigation.goBack()}>
+  //     <Image
+  //       source={require('./assets/images/goback.png')}
+  //       resizeMode="contain"
+  //       style={{
+  //         width: 16,
+  //         height: 10,
+  //         marginTop: 22,
+  //         marginLeft: 18,
+  //         marginBottom: 21,
+  //       }}
+  //     />
+  //   </TouchableOpacity>
+  // ),
+};
 
-const HomeNavigator = createStackNavigator({
-  Home: HomeScreen,
-  Filter: FilterScreen
-},
-{
-  initialRouteName: "Home"
-});
+const HomeNavigator = createStackNavigator(
+  {
+    Home: HomeScreen,
+    Filter: FilterScreen,
+  },
+  {
+    initialRouteName: 'Home',
+  },
+);
 
 //Auth stack navigator
 const AuthNavigator = createStackNavigator(
@@ -75,7 +90,7 @@ AddProductScreen.navigationOptions = {
     <Image
       source={require('./assets/images/camera.png')}
       resizeMode="contain"
-      style={{width: 19, height: 19,tintColor: tintColor}}
+      style={{width: 19, height: 19, tintColor: tintColor}}
     />
   ),
 };
@@ -159,8 +174,8 @@ const HomeDrawerNavigator = createDrawerNavigator(
     contentOptions: {
       activeTintColor: '#DE4D4F',
       activeBackgroundColor: 'transparent',
-      activeLabelStyle:{
-        color: '#DE4D4F'
+      activeLabelStyle: {
+        color: '#DE4D4F',
       },
       labelStyle: {
         fontWeight: 'normal',
