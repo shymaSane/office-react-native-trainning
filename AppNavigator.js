@@ -19,6 +19,8 @@ import AddProductScreen from './src/screens/AddProduct';
 import DrawerMenu from './src/screens/sub-screens/DrawerMenu';
 import FilterScreen from './src/screens/Filter'
 
+//home stack navigator
+
 const HomeNavigator = createStackNavigator({
   Home: HomeScreen,
   Filter: FilterScreen
@@ -27,6 +29,7 @@ const HomeNavigator = createStackNavigator({
   initialRouteName: "Home"
 });
 
+//Auth stack navigator
 const AuthNavigator = createStackNavigator(
   {
     Login: LoginScreen,
