@@ -362,7 +362,7 @@ export default StyleSheet.create({
   FilterResetButton:{
     justifyContent: 'center',
     alignItems: 'center',
-    height: 40,
+    height: 35,
     width: 130,
     elevation: 6,
     backgroundColor: 'white',
@@ -377,7 +377,7 @@ export default StyleSheet.create({
   FilterApplyButton:{
     justifyContent: 'center',
     alignItems: 'center',
-    height: 40,
+    height: 35,
     width: 130,
     marginLeft: 7,
     elevation: 6,
@@ -390,4 +390,55 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Medium',
     color: 'white'
   },
+  // Categories styling 
+  cateContainer: {
+    minWidth: '100%',
+    flexDirection: 'row',
+    justifyContent: 'center', 
+    alignItems: 'center'
+  },
+  cateItemContainer:{
+    width: Dimensions.get('window').width / 2 - 10,
+    height: Dimensions.get('window').width / 2 - 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 10,
+    borderRadius: 10,
+    elevation: 5,
+
+  },
+  cateCarImage: {
+    width: 49,
+    height: 34
+  },
+  cateMobileImage: {
+    width: 26,
+    height: 43
+  },
+  cateText: {
+    fontFamily: 'Montserrat-Light',
+    fontSize: 16,
+    color: '#aeaeaeff'
+  },
+  cateTextContainer: {
+    marginTop: 16
+  },
+  cateHouseIcon:{
+    width: 45, 
+    height: 43
+  },
+cateServiceIcon:{
+  width: 51,
+  height: 33
+},
+cateAccessIcon:{
+  width: 35,
+  height: 50
+},
+cateOthersIcon:{
+  width: 32,
+  height: 32
+}
+
+  
 });
