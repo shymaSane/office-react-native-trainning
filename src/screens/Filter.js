@@ -59,7 +59,7 @@ class FilterScreen extends Component {
                 <Text style={styles.AllCategoriesText}>All Categories</Text>
               </View>
             </View>
-            <TouchableOpacity onPress={() => alert('it works')}>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('Categories')}>
               <Image
                 source={require('../../assets/images/go.png')}
                 style={styles.goBackIcon}

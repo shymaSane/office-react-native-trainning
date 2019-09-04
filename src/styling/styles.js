@@ -295,7 +295,7 @@ export default StyleSheet.create({
   filterHeaderTitle: {
     fontFamily: 'Montserrat-Medium',
     color: '#B1B1B1',
-    fontSize: 16,
+    fontSize: 14,
   },
   cateFilterContainer: {
     flexDirection: 'row',
@@ -322,7 +322,7 @@ export default StyleSheet.create({
   },
   AllCategoriesText: {
     fontFamily: 'Montserrat-Medium',
-    fontSize: 16,
+    fontSize: 14,
   },
   categoriesFilterText: {
     fontFamily: 'Montserrat-Regular',
@@ -344,13 +344,13 @@ export default StyleSheet.create({
   priceFormText: {
     fontFamily: 'Montserrat-Medium',
     color: '#676767',
-    fontSize: 16,
+    fontSize: 14,
   },
   priceFormInputText: {
     flex:1,
     fontFamily: 'Montserrat-Medium',
     color: '#676767',
-    fontSize: 16,
+    fontSize: 14,
   },
   filterButtonContainer:{
     width: '100%' ,
