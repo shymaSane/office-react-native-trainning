@@ -23,18 +23,19 @@ import FilterScreen from './src/screens/Filter';
 
 //filter nav style
 FilterScreen.navigationOptions = {
-  title: 'Filters',
-  headerStyle: {
-    elevation: 0,
-    shadowOpacity: 0,
-  },
-  headerTintColor: '#B1B1B1',
-  headerTitleStyle: {
-    fontFamily: 'Montserrat-Medium',
-    color: '#B1B1B1',
-    fontSize: 16,
-    marginLeft: -5,
-  },
+  header: null
+  // title: 'Filters',
+  // headerStyle: {
+  //   elevation: 0,
+  //   shadowOpacity: 0,
+  // },
+  // headerTintColor: '#B1B1B1',
+  // headerTitleStyle: {
+  //   fontFamily: 'Montserrat-Medium',
+  //   color: '#B1B1B1',
+  //   fontSize: 16,
+  //   marginLeft: -5,
+  // },
   // headerLeft: ({navigation}) => (
   //   <TouchableOpacity onPress={navigation.goBack()}>
   //     <Image

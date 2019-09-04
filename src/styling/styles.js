@@ -280,6 +280,24 @@ export default StyleSheet.create({
     marginLeft: 18,
     marginRight: 23
   },
+  filterHeader:{
+    width: '100%',
+    flexDirection:'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center', height: 53
+  },
+  filterHeaderImage:{
+    width: 16, 
+    height: 10
+  },
+  filterHeaderImageContainer:{
+    marginRight: 11
+  },
+  filterHeaderTitle:{
+    fontFamily: 'Montserrat-Medium',
+    color: '#B1B1B1',
+    fontSize: 16,
+  },
   cateFilterContainer:{
     flexDirection:'row',
     justifyContent:'space-between',
@@ -313,6 +331,18 @@ export default StyleSheet.create({
   hrLine:{
     borderBottomColor: '#DDDDDD',
     borderBottomWidth: 1,
+  }, 
+  filterLightTextContainer:{
+    marginTop: 20
+  },
+  priceRangeContainer:{
+    flexDirection: 'row',
+    justifyContent:'flex-start',
+    alignItems: 'center'
+  },
+  priceFromText: {
+    color: "#676767",
+    fontSize: 16
   }
   
 });
