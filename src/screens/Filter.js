@@ -1,11 +1,26 @@
 import React, {Component} from 'react';
-import {View, Text, Image, TouchableOpacity, TextInput} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  TextInput,
+  Button,
+} from 'react-native';
 import styles from '../styling/styles';
 
 class FilterScreen extends Component {
   state = {
-    priceFrom: "",
-    priceTo: "",
+    priceFrom: '',
+    priceTo: '',
+  };
+
+  onPressReset = () => {
+    alert('reset');
+  };
+
+  onPressApply = () => {
+    alert('Apply');
   };
 
   render() {
@@ -14,8 +29,13 @@ class FilterScreen extends Component {
       <View style={styles.filterContainer}>
         {/* header */}
         <View style={styles.filterHeader}>
-          <TouchableOpacity style={styles.filterHeaderImageContainer} onPress={() => this.props.navigation.goBack()}>
-            <Image source={require('../../assets/images/goback.png')} style={styles.filterHeaderImage}/>
+          <TouchableOpacity
+            style={styles.filterHeaderImageContainer}
+            onPress={() => this.props.navigation.goBack()}>
+            <Image
+              source={require('../../assets/images/goback.png')}
+              style={styles.filterHeaderImage}
+            />
           </TouchableOpacity>
           <View>
             <Text style={styles.filterHeaderTitle}>Filters</Text>
@@ -75,7 +95,7 @@ class FilterScreen extends Component {
               placeholder="from"
               onChangeText={text => this.setState({priceFrom: text})}
               value={`${priceFrom}`}
-              keyboardType='numeric'
+              keyboardType="numeric"
             />
           </View>
           <View style={styles.priceRangeInputContainer}>
@@ -86,7 +106,7 @@ class FilterScreen extends Component {
               style={styles.priceFormInputText}
               onChangeText={text => this.setState({priceTo: text})}
               value={`${priceTo}`}
-              keyboardType='numeric'
+              keyboardType="numeric"
               placeholder="to"
             />
           </View>
@@ -107,6 +127,23 @@ class FilterScreen extends Component {
               />
             </TouchableOpacity>
           </View>
+        </View>
+        {/* reset & apply */}
+        <View style={styles.filterButtonContainer}>
+            <TouchableOpacity
+              onPress={this.onPressReset}
+              style={styles.FilterResetButton}>
+              <View>
+                <Text style={styles.filterResetButtonText}>Reset</Text>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={this.onPressApply}
+              style={styles.FilterApplyButton}>
+              <View>
+                <Text style={styles.filterApplyButtonText}>Apply</Text>
+              </View>
+            </TouchableOpacity>
         </View>
       </View>
     );

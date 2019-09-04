@@ -352,4 +352,42 @@ export default StyleSheet.create({
     color: '#676767',
     fontSize: 16,
   },
+  filterButtonContainer:{
+    width: '100%' ,
+    flexDirection:'row',
+    justifyContent: 'center',
+    alignItems: "center",
+    marginTop: 10,
+  },
+  FilterResetButton:{
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 40,
+    width: 130,
+    elevation: 6,
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderColor: '#DE4D4F',
+    borderRadius: 25,
+  },
+  filterResetButtonText:{
+    fontFamily: 'Montserrat-Medium',
+    color: '#DE4D4F'
+  },
+  FilterApplyButton:{
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 40,
+    width: 130,
+    marginLeft: 7,
+    elevation: 6,
+    backgroundColor: '#DE4D4F',
+    borderWidth: 1,
+    borderColor: '#DE4D4F',
+    borderRadius: 25,
+  },
+  filterApplyButtonText:{
+    fontFamily: 'Montserrat-Medium',
+    color: 'white'
+  },
 });
