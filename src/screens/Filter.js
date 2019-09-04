@@ -91,6 +91,23 @@ class FilterScreen extends Component {
             />
           </View>
         </View>
+        {/* Relevance */}
+        <View>
+          <View style={styles.filterLightTextContainer}>
+            <Text style={styles.categoriesFilterText}>Sort by</Text>
+          </View>
+          <View style={styles.cateFilterContainer}>
+            <View>
+              <Text style={styles.AllCategoriesText}>Relevance</Text>
+            </View>
+            <TouchableOpacity onPress={() => alert('it works')}>
+              <Image
+                source={require('../../assets/images/go.png')}
+                style={styles.goBackIcon}
+              />
+            </TouchableOpacity>
+          </View>
+        </View>
       </View>
     );
   }
