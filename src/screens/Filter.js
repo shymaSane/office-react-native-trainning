@@ -4,12 +4,12 @@ import styles from '../styling/styles';
 
 class FilterScreen extends Component {
   state = {
-    priceFrom: 0,
-    PriceTo: 1000000000,
+    priceFrom: "",
+    priceTo: "",
   };
 
   render() {
-    const {priceFrom, PriceTo} = this.state;
+    const {priceFrom, priceTo} = this.state;
     return (
       <View style={styles.filterContainer}>
         {/* header */}
@@ -66,15 +66,28 @@ class FilterScreen extends Component {
         </View>
         {/* Price */}
         <View style={styles.hrLine}>
-          <View style={styles.priceRangeContainer}>
+          <View style={styles.priceRangeInputContainer}>
             <View>
-              <Text style={styles.priceFromText}>Price:</Text>
+              <Text style={styles.priceFormText}>Price:</Text>
             </View>
             <TextInput
-              placeholder="From"
+              style={styles.priceFormInputText}
+              placeholder="from"
               onChangeText={text => this.setState({priceFrom: text})}
-              value={priceFrom}
+              value={`${priceFrom}`}
               keyboardType='numeric'
+            />
+          </View>
+          <View style={styles.priceRangeInputContainer}>
+            <View>
+              <Text style={styles.priceFormText}>Price:</Text>
+            </View>
+            <TextInput
+              style={styles.priceFormInputText}
+              onChangeText={text => this.setState({priceTo: text})}
+              value={`${priceTo}`}
+              keyboardType='numeric'
+              placeholder="to"
             />
           </View>
         </View>

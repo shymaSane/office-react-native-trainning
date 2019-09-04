@@ -239,110 +239,117 @@ export default StyleSheet.create({
     width: '100%',
     height: '100%',
     backgroundColor: '#DE4D4F',
-    
   },
   menuProfileContainer: {
-    flex:1,
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'flex-start',
     marginLeft: 21,
     marginTop: 32,
-    marginBottom: 32
-    
+    marginBottom: 32,
   },
   profileImageMenu: {
     width: 70,
     height: 70,
     resizeMode: 'cover',
     borderRadius: 50,
-    borderWidth: 3, 
-    borderColor: 'white'
+    borderWidth: 3,
+    borderColor: 'white',
   },
-  menuProfileText1:{
+  menuProfileText1: {
     fontFamily: 'Montserrat-Medium',
     fontSize: 14,
     color: 'white',
   },
-  menuProfileText2:{
+  menuProfileText2: {
     fontFamily: 'Montserrat-Regular',
     fontSize: 14,
     color: '#DCDCDC',
     letterSpacing: 1,
   },
-  menuProfileTextContainer:{
+  menuProfileTextContainer: {
     marginBottom: 4,
     marginTop: 14,
   },
   //Filter Styling:
-  filterContainer:{
+  filterContainer: {
     flex: 1,
-    maxWidth: '100%', 
+    maxWidth: '100%',
     marginLeft: 18,
-    marginRight: 23
+    marginRight: 23,
   },
-  filterHeader:{
+  filterHeader: {
     width: '100%',
-    flexDirection:'row',
+    flexDirection: 'row',
     justifyContent: 'flex-start',
-    alignItems: 'center', height: 53
+    alignItems: 'center',
+    height: 53,
   },
-  filterHeaderImage:{
-    width: 16, 
-    height: 10
+  filterHeaderImage: {
+    width: 16,
+    height: 10,
   },
-  filterHeaderImageContainer:{
-    marginRight: 11
+  filterHeaderImageContainer: {
+    marginRight: 11,
   },
-  filterHeaderTitle:{
+  filterHeaderTitle: {
     fontFamily: 'Montserrat-Medium',
     color: '#B1B1B1',
     fontSize: 16,
   },
-  cateFilterContainer:{
-    flexDirection:'row',
-    justifyContent:'space-between',
-    alignItems: 'center', 
+  cateFilterContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     marginTop: 19,
-    marginBottom:22
+    marginBottom: 22,
   },
-  cateImageFilterContainer:{
-    flexDirection:'row',
+  cateImageFilterContainer: {
+    flexDirection: 'row',
     justifyContent: 'center',
-    alignItems:'center'
+    alignItems: 'center',
   },
-  cateFilterIcon:{
+  cateFilterIcon: {
     height: 36,
-    width: 36
+    width: 36,
   },
-  goBackIcon:{
+  goBackIcon: {
     width: 9,
-    height: 16
+    height: 16,
   },
-  AllCategoriesTextContainer:{
-    marginLeft: 18
+  AllCategoriesTextContainer: {
+    marginLeft: 18,
   },
-  AllCategoriesText:{
-    fontFamily:'Montserrat-Medium', fontSize: 16,
+  AllCategoriesText: {
+    fontFamily: 'Montserrat-Medium',
+    fontSize: 16,
   },
-  categoriesFilterText:{
-    fontFamily:'Montserrat-Regular', fontSize: 12,
-    color: "#676767"
+  categoriesFilterText: {
+    fontFamily: 'Montserrat-Regular',
+    fontSize: 12,
+    color: '#676767',
   },
-  hrLine:{
+  hrLine: {
     borderBottomColor: '#DDDDDD',
     borderBottomWidth: 1,
-  }, 
-  filterLightTextContainer:{
-    marginTop: 20
   },
-  priceRangeContainer:{
+  filterLightTextContainer: {
+    marginTop: 20,
+  },
+  priceRangeInputContainer: {
     flexDirection: 'row',
-    justifyContent:'flex-start',
-    alignItems: 'center'
+    justifyContent: 'flex-start',
+    alignItems: 'center',
   },
-  priceFromText: {
-    color: "#676767",
-    fontSize: 16
-  }
-  
+  priceFormText: {
+    fontFamily: 'Montserrat-Medium',
+    color: '#676767',
+    fontSize: 16,
+  },
+  priceFormInputText: {
+    flex:1,
+    fontFamily: 'Montserrat-Medium',
+    color: '#676767',
+    fontSize: 16,
+  },
 });
