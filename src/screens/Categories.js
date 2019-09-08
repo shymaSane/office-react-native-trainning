@@ -23,7 +23,7 @@ class CategoriesScreen extends Component {
             />
           </TouchableOpacity>
           <View>
-            <Text style={styles.filterHeaderTitle}>Ctegories</Text>
+            <Text style={styles.filterHeaderTitle}>Categories</Text>
           </View>
         </View>
         <View style={styles.cateScrollView}>

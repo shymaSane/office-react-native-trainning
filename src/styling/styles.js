@@ -403,9 +403,8 @@ export default StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     justifyContent: 'flex-start',
-    alignItems: 'center',
-    height: 53,
-    marginLeft: 18
+    alignItems: 'center',    paddingLeft: 18,
+    height: 53
   },
   cateContainerTop: {
     minWidth: '100%',
@@ -458,4 +457,27 @@ export default StyleSheet.create({
   cateScrollView: {
     flex: 1,
   },
+  // Profile Css
+  profileContainer:{
+    flex: 1,
+    minWidth: '100%'
+  },
+  profileHeader:{
+    maxWidth: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: 53,
+    paddingLeft: 18,
+    paddingRight: 13,
+   
+  },
+  profileHeaderItems: {
+    flexDirection: 'row', 
+    alignItems: 'center'
+  },
+  settingsIcon: {
+    width: 17,
+    height: 17
+  }
 });
