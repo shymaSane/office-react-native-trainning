@@ -479,5 +479,45 @@ export default StyleSheet.create({
   settingsIcon: {
     width: 17,
     height: 17
-  }
+  },
+  profileMainHeaderContainer:{
+    height: 143,
+    maxWidth: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingLeft: 18,
+    paddingRight: 14
+    
+  },
+  profileMHImage:{
+    height: 84,
+    width: 84,
+    borderRadius: 50
+  },
+  editIconContainer:{
+    position: "absolute",
+   right: 0
+  },
+  editIcon: {
+    width: 19, 
+    height: 19
+  },
+  mHBackgroundImage:{
+    height: 143,
+    minWidth: '100%',
+  },
+  mHText1:{
+    fontFamily: 'Montserrat-Regular',
+    fontSize: 14,
+    color: 'white',
+    letterSpacing: 1
+  },
+  mHText2:{
+    fontFamily: 'Montserrat-Light',
+    fontSize: 12,
+    color: '#DCDCDC',
+    letterSpacing: 1
+  },
+
 });
