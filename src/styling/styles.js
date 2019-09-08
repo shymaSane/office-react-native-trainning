@@ -296,6 +296,7 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Medium',
     color: '#B1B1B1',
     fontSize: 14,
+
   },
   cateFilterContainer: {
     flexDirection: 'row',
@@ -347,19 +348,19 @@ export default StyleSheet.create({
     fontSize: 14,
   },
   priceFormInputText: {
-    flex:1,
+    flex: 1,
     fontFamily: 'Montserrat-Medium',
     color: '#676767',
     fontSize: 14,
   },
-  filterButtonContainer:{
-    width: '100%' ,
-    flexDirection:'row',
+  filterButtonContainer: {
+    width: '100%',
+    flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: "center",
+    alignItems: 'center',
     marginTop: 10,
   },
-  FilterResetButton:{
+  FilterResetButton: {
     justifyContent: 'center',
     alignItems: 'center',
     height: 35,
@@ -370,11 +371,11 @@ export default StyleSheet.create({
     borderColor: '#DE4D4F',
     borderRadius: 25,
   },
-  filterResetButtonText:{
+  filterResetButtonText: {
     fontFamily: 'Montserrat-Medium',
-    color: '#DE4D4F'
+    color: '#DE4D4F',
   },
-  FilterApplyButton:{
+  FilterApplyButton: {
     justifyContent: 'center',
     alignItems: 'center',
     height: 35,
@@ -386,59 +387,75 @@ export default StyleSheet.create({
     borderColor: '#DE4D4F',
     borderRadius: 25,
   },
-  filterApplyButtonText:{
+  filterApplyButtonText: {
     fontFamily: 'Montserrat-Medium',
-    color: 'white'
+    color: 'white',
   },
-  // Categories styling 
+  // Categories styling
   cateContainer: {
     minWidth: '100%',
     flexDirection: 'row',
-    justifyContent: 'center', 
-    alignItems: 'center'
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 5,
   },
-  cateItemContainer:{
+  cateHeader:{
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    height: 53,
+    marginLeft: 18
+  },
+  cateContainerTop: {
+    minWidth: '100%',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 5,
+    marginTop: 14
+  },
+  cateItemContainer: {
     width: Dimensions.get('window').width / 2 - 10,
     height: Dimensions.get('window').width / 2 - 20,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 10,
     borderRadius: 10,
-    elevation: 5,
-
+    elevation:5
   },
   cateCarImage: {
     width: 49,
-    height: 34
+    height: 34,
   },
   cateMobileImage: {
     width: 26,
-    height: 43
+    height: 43,
   },
   cateText: {
     fontFamily: 'Montserrat-Light',
     fontSize: 16,
-    color: '#aeaeaeff'
+    color: '#aeaeaeff',
   },
   cateTextContainer: {
-    marginTop: 16
+    marginTop: 16,
   },
-  cateHouseIcon:{
-    width: 45, 
-    height: 43
+  cateHouseIcon: {
+    width: 45,
+    height: 43,
   },
-cateServiceIcon:{
-  width: 51,
-  height: 33
-},
-cateAccessIcon:{
-  width: 35,
-  height: 50
-},
-cateOthersIcon:{
-  width: 32,
-  height: 32
-}
-
-  
+  cateServiceIcon: {
+    width: 51,
+    height: 33,
+  },
+  cateAccessIcon: {
+    width: 35,
+    height: 50,
+  },
+  cateOthersIcon: {
+    width: 32,
+    height: 32,
+  },
+  cateScrollView: {
+    flex: 1,
+  },
 });
