@@ -61,6 +61,21 @@ class ProfileScreen extends Component {
             </View>
           </View>
         </ImageBackground>
+        {/* Sub Header */}
+        <View style={styles.profileSubHeader}>
+          <TouchableOpacity>
+            <Text style={styles.profileSubHeaderText}>SELLING</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text style={styles.profileSubHeaderText}>SOLD</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text style={styles.profileSubHeaderText}>FAVORITES</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text style={styles.profileSubHeaderText}>REVIEWS</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }

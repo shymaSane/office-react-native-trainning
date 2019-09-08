@@ -519,5 +519,19 @@ export default StyleSheet.create({
     color: '#DCDCDC',
     letterSpacing: 1
   },
+  profileSubHeader:{
+    height: 47,
+    minWidth: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    backgroundColor: '#EFEFEF',
+    // backgroundColor: '#DCDCDC'
+  },
+  profileSubHeaderText: {
+    fontFamily: 'Montserrat-Light',
+    color: '#9a9a9aff',
+    fontSize: 12
+  }
 
 });
