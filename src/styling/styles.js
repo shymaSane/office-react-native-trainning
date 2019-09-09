@@ -522,16 +522,19 @@ export default StyleSheet.create({
   profileSubHeader:{
     height: 47,
     minWidth: '100%',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
     backgroundColor: '#EFEFEF',
-    // backgroundColor: '#DCDCDC'
+    elevation: 0, 
+  
   },
   profileSubHeaderText: {
+    width:'100%',
     fontFamily: 'Montserrat-Light',
     color: '#9a9a9aff',
-    fontSize: 12
+    fontSize:12,
+    textAlign: 'center',
+    lineHeight: 20,
+    margin: 0,
+    padding: 0
   }
 
 });

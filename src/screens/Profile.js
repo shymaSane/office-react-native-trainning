@@ -5,10 +5,43 @@ import {
   TouchableOpacity,
   Image,
   ImageBackground,
+  TouchableHighlight,
+  Dimensions,
 } from 'react-native';
 import styles from '../styling/styles';
+import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
+import HomeImageGallery from './sub-screens/HomeImageGallery';
+
+const FirstRoute = () => <HomeImageGallery />;
+
+const SecondRoute = () => <HomeImageGallery />;
+
+const ThirdRoute = () => <HomeImageGallery />;
+
+const FourthRoute = () => <HomeImageGallery />;
 
 class ProfileScreen extends Component {
+  state = {
+    index: 0,
+    routes: [
+      {key: 'first', title: 'SELLING'},
+      {key: 'second', title: 'SOLD'},
+      {key: 'third', title: 'FAVORITE'},
+      {key: 'fourth', title: 'REVIEWS'},
+    ],
+  };
+
+  renderTabBar = props => {
+    return (
+      <TabBar
+        style={styles.profileSubHeader}
+        labelStyle={styles.profileSubHeaderText}
+        {...props}
+        indicatorStyle={{backgroundColor: '#e65970', height: 2.5}}
+      />
+    );
+  };
+
   render() {
     return (
       <View style={styles.profileContainer}>
@@ -62,7 +95,7 @@ class ProfileScreen extends Component {
           </View>
         </ImageBackground>
         {/* Sub Header */}
-        <View style={styles.profileSubHeader}>
+        {/* <View style={styles.profileSubHeader}>
           <TouchableOpacity>
             <Text style={styles.profileSubHeaderText}>SELLING</Text>
           </TouchableOpacity>
@@ -75,7 +108,20 @@ class ProfileScreen extends Component {
           <TouchableOpacity>
             <Text style={styles.profileSubHeaderText}>REVIEWS</Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
+
+        <TabView
+          navigationState={this.state}
+          renderScene={SceneMap({
+            first: FirstRoute,
+            second: SecondRoute,
+            third: ThirdRoute,
+            fourth: FourthRoute,
+          })}
+          renderTabBar={this.renderTabBar}
+          onIndexChange={index => this.setState({index})}
+          initialLayout={{width: Dimensions.get('window').width}}
+        />
       </View>
     );
   }
