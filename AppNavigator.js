@@ -18,45 +18,19 @@ import LogoutScreen from './src/screens/Logout';
 import AddProductScreen from './src/screens/AddProduct';
 import DrawerMenu from './src/screens/sub-screens/DrawerMenu';
 import FilterScreen from './src/screens/Filter';
+import SettingsScreen from './src/screens/Settings'
 
-//home stack navigator
 
 //filter nav style
 FilterScreen.navigationOptions = {
   header: null
-  // title: 'Filters',
-  // headerStyle: {
-  //   elevation: 0,
-  //   shadowOpacity: 0,
-  // },
-  // headerTintColor: '#B1B1B1',
-  // headerTitleStyle: {
-  //   fontFamily: 'Montserrat-Medium',
-  //   color: '#B1B1B1',
-  //   fontSize: 16,
-  //   marginLeft: -5,
-  // },
-  // headerLeft: ({navigation}) => (
-  //   <TouchableOpacity onPress={navigation.goBack()}>
-  //     <Image
-  //       source={require('./assets/images/goback.png')}
-  //       resizeMode="contain"
-  //       style={{
-  //         width: 16,
-  //         height: 10,
-  //         marginTop: 22,
-  //         marginLeft: 18,
-  //         marginBottom: 21,
-  //       }}
-  //     />
-  //   </TouchableOpacity>
-  // ),
 };
 
 const HomeNavigator = createStackNavigator(
   {
     Home: HomeScreen,
     Filter: FilterScreen,
+    Settings: SettingsScreen
   },
   {
     initialRouteName: 'Home',

@@ -60,7 +60,9 @@ class ProfileScreen extends Component {
               <Text style={styles.filterHeaderTitle}>My Profile</Text>
             </View>
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity
+          onPress ={() => this.props.navigation.navigate('Settings')}
+          >
             <Image
               source={require('../../assets/images/settings.png')}
               style={styles.settingsIcon}
@@ -94,22 +96,6 @@ class ProfileScreen extends Component {
             </View>
           </View>
         </ImageBackground>
-        {/* Sub Header */}
-        {/* <View style={styles.profileSubHeader}>
-          <TouchableOpacity>
-            <Text style={styles.profileSubHeaderText}>SELLING</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={styles.profileSubHeaderText}>SOLD</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={styles.profileSubHeaderText}>FAVORITES</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={styles.profileSubHeaderText}>REVIEWS</Text>
-          </TouchableOpacity>
-        </View> */}
-
         <TabView
           navigationState={this.state}
           renderScene={SceneMap({
