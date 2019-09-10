@@ -600,5 +600,34 @@ export default StyleSheet.create({
     fontSize: 12,
     color: "#DE4D4F"
   },
- 
+  changeNameInput:{
+    fontFamily: 'Montserrat-Medium',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 50,
+    backgroundColor: '#EFEFEF',
+    marginLeft: 18,
+    marginRight: 18,
+    paddingLeft: 18,
+    borderRadius: 5
+  },
+  changeNameInputText:{
+    flex: 1,
+    marginLeft: 15,
+    fontFamily: 'Montserrat-Medium',
+    color: '#B1B1B1'
+  },
+  changeNameInputButton:{
+    backgroundColor: '#DE4D4F',
+    maxWidth: '100%',
+    height: 44,
+    paddingTop: 15,
+    paddingBottom: 15,
+    borderRadius: 50,
+    elevation: 7,
+    marginLeft: 18,
+    marginRight: 18,
+    marginTop: 43
+  }
 });
