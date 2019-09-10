@@ -40,7 +40,9 @@ class SettingsScreen extends Component {
             </View>
           </TouchableOpacity>
           {/* Email */}
-          <TouchableOpacity style={styles.settingsMenuItemContainer}>
+          <TouchableOpacity style={styles.settingsMenuItemContainer}
+           onPress ={() => this.props.navigation.navigate('ChangeEmail')}
+          >
             <Image 
             source={require('../../assets/images/settings/email.png')}
            style={styles.settingsEmailIcon}

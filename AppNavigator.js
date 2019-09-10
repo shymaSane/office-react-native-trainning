@@ -20,6 +20,7 @@ import DrawerMenu from './src/screens/sub-screens/DrawerMenu';
 import FilterScreen from './src/screens/Filter';
 import SettingsScreen from './src/screens/Settings'
 import ChangeNameScreen from './src/screens/ChangeName'
+import ChangeEmailScreen from './src/screens/ChangeEmail'
 
 
 //filter nav style
@@ -39,6 +40,10 @@ ChangeNameScreen.navigationOptions = {
   header: null,
 }
 
+ChangeEmailScreen.navigationOptions = {
+  header: null,
+}
+
 
 const HomeNavigator = createStackNavigator(
   {
@@ -55,7 +60,8 @@ const HomeNavigator = createStackNavigator(
 const ProfileNavigator = createStackNavigator({
   Profile: ProfileScreen,
   Settings: SettingsScreen,
-  ChangeName: ChangeNameScreen
+  ChangeName: ChangeNameScreen,
+  ChangeEmail: ChangeEmailScreen
 },
 {
   initialRouteName: 'Profile'
@@ -171,7 +177,7 @@ const HomeDrawerNavigator = createDrawerNavigator(
     Logout: LogoutScreen,
   },
   {
-    backBehavioral: 'order',
+    backBehavioral: 'history',
     contentComponent: DrawerMenu,
     contentOptions: {
       activeTintColor: '#DE4D4F',
