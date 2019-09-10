@@ -535,6 +535,70 @@ export default StyleSheet.create({
     lineHeight: 20,
     margin: 0,
     padding: 0
-  }
-
+  },
+  // Seetings css
+  settingsConatiner:{
+    flex: 1,
+  },
+  settingsMenuContainer: {
+    flex: 1,
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    marginLeft: 18,
+    marginBottom: 50
+  },
+  settingsMenuItemContainer:{
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  settingsProfilepic:{
+    width: 40,
+    height: 40,
+    borderRadius: 50
+  },
+  settingsPhotoTextContainer:{
+    marginLeft: 10
+  },
+  nameIcon:{
+    width: 14, 
+    height: 17
+  },
+  settingsEmailIcon:{
+    width: 15, 
+    height: 12
+  },
+  settingsLocationIcon:{
+    width: 11, 
+    height: 14
+  },
+  settingsPassIcon:{
+    width: 11, 
+    height: 13
+  },
+  settingsNoteIcon:{
+    width: 14, 
+    height: 14
+  },
+  settingsTextContainer: {
+    marginLeft: 27
+  },
+  settingsItemText1:{
+    fontFamily: 'Montserrat-Medium',
+    fontSize: 12
+  },
+  settingsItemText2:{
+    fontFamily: 'Montserrat-Medium',
+    fontSize: 12,
+    color: '#B1B1B1',
+    marginTop: 7
+  },
+  settingsNoteTextContainer: {
+    marginLeft: 25
+  },
+  settingsItemText3:{
+    fontFamily: 'Montserrat-Medium',
+    fontSize: 12,
+    color: "#DE4D4F"
+  },
+ 
 });

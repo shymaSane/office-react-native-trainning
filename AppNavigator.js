@@ -23,8 +23,13 @@ import SettingsScreen from './src/screens/Settings'
 
 //filter nav style
 FilterScreen.navigationOptions = {
-  header: null
+  header: null,
 };
+
+SettingsScreen.navigationOptions ={
+  header: null,
+ 
+}
 
 const HomeNavigator = createStackNavigator(
   {
@@ -33,6 +38,7 @@ const HomeNavigator = createStackNavigator(
     Settings: SettingsScreen
   },
   {
+    
     initialRouteName: 'Home',
   },
 );
@@ -145,6 +151,7 @@ const HomeDrawerNavigator = createDrawerNavigator(
     Logout: LogoutScreen,
   },
   {
+    backBehavioral: 'history',
     contentComponent: DrawerMenu,
     contentOptions: {
       activeTintColor: '#DE4D4F',
