@@ -166,12 +166,12 @@ const HomeDrawerNavigator = createDrawerNavigator(
     Chat: ChatScreen,
     Notifications: NotificationsScreen,
     Categories: CategoriesScreen,
-    Profile: ProfileNavigator,
+    ProfileHome: ProfileNavigator,
     Help: HelpScreen,
     Logout: LogoutScreen,
   },
   {
-    backBehavioral: 'history',
+    backBehavioral: 'order',
     contentComponent: DrawerMenu,
     contentOptions: {
       activeTintColor: '#DE4D4F',

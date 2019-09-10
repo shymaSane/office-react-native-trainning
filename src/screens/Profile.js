@@ -50,7 +50,7 @@ class ProfileScreen extends Component {
           <View style={styles.profileHeaderItems}>
             <TouchableOpacity
               style={styles.filterHeaderImageContainer}
-              onPress={() => this.props.navigation.goBack()}>
+              onPress={() => this.props.navigation.goBack(null)}>
               <Image
                 source={require('../../assets/images/goback.png')}
                 style={styles.filterHeaderImage}
