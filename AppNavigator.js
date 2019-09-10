@@ -19,6 +19,7 @@ import AddProductScreen from './src/screens/AddProduct';
 import DrawerMenu from './src/screens/sub-screens/DrawerMenu';
 import FilterScreen from './src/screens/Filter';
 import SettingsScreen from './src/screens/Settings'
+import ChangeNameScreen from './src/screens/ChangeName'
 
 
 //filter nav style
@@ -29,20 +30,37 @@ FilterScreen.navigationOptions = {
 SettingsScreen.navigationOptions ={
   header: null,
  
+};
+ProfileScreen.navigationOptions = {
+  header: null,
 }
+
+ChangeNameScreen.navigationOptions = {
+  header: null,
+}
+
 
 const HomeNavigator = createStackNavigator(
   {
     Home: HomeScreen,
     Filter: FilterScreen,
-    Settings: SettingsScreen
+    
   },
   {
-    
     initialRouteName: 'Home',
   },
 );
 
+
+const ProfileNavigator = createStackNavigator({
+  Profile: ProfileScreen,
+  Settings: SettingsScreen,
+  ChangeName: ChangeNameScreen
+},
+{
+  initialRouteName: 'Profile'
+}
+)
 //Auth stack navigator
 const AuthNavigator = createStackNavigator(
   {
@@ -106,7 +124,7 @@ CategoriesScreen.navigationOptions = {
   ),
 };
 
-ProfileScreen.navigationOptions = {
+ProfileNavigator.navigationOptions = {
   drawerLabel: 'Profile',
   drawerIcon: ({tintColor}) => (
     <Image
@@ -139,6 +157,8 @@ LogoutScreen.navigationOptions = {
   ),
 };
 
+
+
 const HomeDrawerNavigator = createDrawerNavigator(
   {
     HomePage: HomeNavigator,
@@ -146,7 +166,7 @@ const HomeDrawerNavigator = createDrawerNavigator(
     Chat: ChatScreen,
     Notifications: NotificationsScreen,
     Categories: CategoriesScreen,
-    Profile: ProfileScreen,
+    Profile: ProfileNavigator,
     Help: HelpScreen,
     Logout: LogoutScreen,
   },

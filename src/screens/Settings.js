@@ -25,7 +25,9 @@ class SettingsScreen extends Component {
             <Text style={styles.settingsItemText1}>Photo</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.settingsMenuItemContainer}>
+          <TouchableOpacity 
+          onPress ={() => this.props.navigation.navigate('ChangeName')}
+          style={styles.settingsMenuItemContainer}>
             <Image 
             source={require('../../assets/images/settings/name.png')}
             style={styles.nameIcon}
