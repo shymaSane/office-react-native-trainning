@@ -607,10 +607,9 @@ export default StyleSheet.create({
     alignItems: 'center',
     height: 50,
     backgroundColor: '#EFEFEF',
-    marginLeft: 18,
-    marginRight: 18,
     paddingLeft: 18,
-    borderRadius: 5
+    borderRadius: 5,
+    marginTop: 44
   },
   changeNameInputText:{
     flex: 1,
@@ -626,8 +625,21 @@ export default StyleSheet.create({
     paddingBottom: 15,
     borderRadius: 50,
     elevation: 7,
+    marginTop: 43
+  }, 
+  changeEmailContainer: {
     marginLeft: 18,
     marginRight: 18,
-    marginTop: 43
-  }
+    marginTop: 8
+  },
+  changeEmailText1:{
+    fontFamily:'Montserrat-Light',
+    fontSize: 12,
+    color: '#DE4D4F'
+  },
+  changeEmailText2:{
+    fontFamily:'Montserrat-Light',
+    fontSize: 12,
+    color: '#B1B1B1'
+  },
 });

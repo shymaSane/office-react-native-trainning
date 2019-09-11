@@ -6,20 +6,20 @@ import {
   TextInput,
   TouchableWithoutFeedback,
   Keyboard,
-  TouchableOpacity
+  TouchableOpacity,
 } from 'react-native';
 import SubHeaderScreen from './sub-screens/SubHeader';
 import styles from '../styling/styles';
 
 class ChangeEmailScreen extends Component {
   state = {
-    email: '',
+    email: 'email@email.com',
   };
 
-  saveName = (email) =>{
-      this.setState({email: email})
-      alert(`${email}`)
-  }
+  saveName = email => {
+    this.setState({email: email});
+    alert(`${email}`);
+  };
 
   render() {
     const {navigation} = this.props;
@@ -28,24 +28,31 @@ class ChangeEmailScreen extends Component {
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
         <View style={{flex: 1}}>
           <SubHeaderScreen title={'Email'} navigation={navigation} />
-          <View style={styles.changeNameInput}>
-            <Image
-              source={require('../../assets/images/settings/email.png')}
-              style={styles.settingsEmailIcon}
-            />
-            <TextInput
-              allowFontScaling={false}
-              style={styles.changeNameInputText}
-              placeholder="Email"
-              onChangeText={text => this.setState({email: text})}
-              value={email}
-            />
+          <View style={styles.changeEmailContainer}>
+            <View>
+              <Text style={styles.changeEmailText1}>
+                Current Email: <Text style={styles.changeEmailText2}>{email}</Text>
+              </Text>
+            </View>
+            <View style={styles.changeNameInput}>
+              <Image
+                source={require('../../assets/images/settings/email.png')}
+                style={styles.settingsEmailIcon}
+              />
+              <TextInput
+                allowFontScaling={false}
+                style={styles.changeNameInputText}
+                placeholder="Email"
+                onChangeText={text => this.setState({email: text})}
+                value={email}
+              />
+            </View>
+            <TouchableOpacity
+              style={styles.changeNameInputButton}
+              onPress={() => this.saveName(email)}>
+              <Text style={styles.signupButtonText}>Save</Text>
+            </TouchableOpacity>
           </View>
-          <TouchableOpacity
-            style={styles.changeNameInputButton}
-            onPress={() => this.saveName(email)}>
-            <Text style={styles.signupButtonText}>Save</Text>
-          </TouchableOpacity>
         </View>
       </TouchableWithoutFeedback>
     );
