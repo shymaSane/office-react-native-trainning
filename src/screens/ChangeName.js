@@ -21,7 +21,6 @@ class ChangeNameScreen extends Component {
       alert(`${name}`)
   }
 
-
   render() {
     const {navigation} = this.props;
     const {name} = this.state;
