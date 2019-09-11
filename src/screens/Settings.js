@@ -1,10 +1,5 @@
 import React, {Component} from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Image,
-} from 'react-native';
+import {View, Text, TouchableOpacity, Image} from 'react-native';
 import styles from '../styling/styles';
 import SubHeaderScreen from './sub-screens/SubHeader';
 
@@ -12,7 +7,7 @@ class SettingsScreen extends Component {
   render() {
     const {navigation} = this.props;
     return (
-      <View style= {styles.settingsConatiner}>
+      <View style={styles.settingsConatiner}>
         <SubHeaderScreen title={'Settings'} navigation={navigation} />
         {/* setting menu */}
         <View style={styles.settingsMenuContainer}>
@@ -20,17 +15,20 @@ class SettingsScreen extends Component {
             <Text style={styles.settingsItemText3}>Profile</Text>
           </View>
           <TouchableOpacity style={styles.settingsMenuItemContainer}>
-            <Image source={require('../../assets/images/mockProfile.png')}  style= {styles.settingsProfilepic} />
+            <Image
+              source={require('../../assets/images/mockProfile.png')}
+              style={styles.settingsProfilepic}
+            />
             <View style={styles.settingsPhotoTextContainer}>
-            <Text style={styles.settingsItemText1}>Photo</Text>
+              <Text style={styles.settingsItemText1}>Photo</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity 
-          onPress ={() => this.props.navigation.navigate('ChangeName')}
-          style={styles.settingsMenuItemContainer}>
-            <Image 
-            source={require('../../assets/images/settings/name.png')}
-            style={styles.nameIcon}
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate('ChangeName')}
+            style={styles.settingsMenuItemContainer}>
+            <Image
+              source={require('../../assets/images/settings/name.png')}
+              style={styles.nameIcon}
             />
             <View style={styles.settingsTextContainer}>
               <Text style={styles.settingsItemText1}>Name</Text>
@@ -40,12 +38,12 @@ class SettingsScreen extends Component {
             </View>
           </TouchableOpacity>
           {/* Email */}
-          <TouchableOpacity style={styles.settingsMenuItemContainer}
-           onPress ={() => this.props.navigation.navigate('ChangeEmail')}
-          >
-            <Image 
-            source={require('../../assets/images/settings/email.png')}
-           style={styles.settingsEmailIcon}
+          <TouchableOpacity
+            style={styles.settingsMenuItemContainer}
+            onPress={() => this.props.navigation.navigate('ChangeEmail')}>
+            <Image
+              source={require('../../assets/images/settings/email.png')}
+              style={styles.settingsEmailIcon}
             />
             <View style={styles.settingsTextContainer}>
               <Text style={styles.settingsItemText1}>Email</Text>
@@ -55,10 +53,12 @@ class SettingsScreen extends Component {
             </View>
           </TouchableOpacity>
           {/* Location */}
-          <TouchableOpacity style={styles.settingsMenuItemContainer}>
-            <Image 
-            source={require('../../assets/images/settings/location.png')}
-            style={styles.settingsLocationIcon}
+          <TouchableOpacity
+            style={styles.settingsMenuItemContainer}
+            onPress={() => this.props.navigation.navigate('ChangeLocation')}>
+            <Image
+              source={require('../../assets/images/settings/location.png')}
+              style={styles.settingsLocationIcon}
             />
             <View style={styles.settingsTextContainer}>
               <Text style={styles.settingsItemText1}>Location</Text>
@@ -69,9 +69,9 @@ class SettingsScreen extends Component {
           </TouchableOpacity>
           {/* password */}
           <TouchableOpacity style={styles.settingsMenuItemContainer}>
-            <Image 
-            source={require('../../assets/images/settings/password.png')}
-            style={styles.settingsPassIcon}
+            <Image
+              source={require('../../assets/images/settings/password.png')}
+              style={styles.settingsPassIcon}
             />
             <View style={styles.settingsTextContainer}>
               <Text style={styles.settingsItemText1}>Password</Text>
@@ -79,9 +79,9 @@ class SettingsScreen extends Component {
           </TouchableOpacity>
           {/* notifications */}
           <TouchableOpacity style={styles.settingsMenuItemContainer}>
-            <Image 
-            source={require('../../assets/images/settings/notification.png')}
-            style={styles.settingsNoteIcon}
+            <Image
+              source={require('../../assets/images/settings/notification.png')}
+              style={styles.settingsNoteIcon}
             />
             <View style={styles.settingsNoteTextContainer}>
               <Text style={styles.settingsItemText1}>Notification</Text>

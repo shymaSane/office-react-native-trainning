@@ -21,7 +21,7 @@ import FilterScreen from './src/screens/Filter';
 import SettingsScreen from './src/screens/Settings'
 import ChangeNameScreen from './src/screens/ChangeName'
 import ChangeEmailScreen from './src/screens/ChangeEmail'
-
+import ChangeLocationScreen from './src/screens/ChangeLocation'
 
 //filter nav style
 FilterScreen.navigationOptions = {
@@ -44,6 +44,10 @@ ChangeEmailScreen.navigationOptions = {
   header: null,
 }
 
+ChangeLocationScreen.navigationOptions = {
+  header: null,
+}
+
 
 const HomeNavigator = createStackNavigator(
   {
@@ -61,7 +65,8 @@ const ProfileNavigator = createStackNavigator({
   Profile: ProfileScreen,
   Settings: SettingsScreen,
   ChangeName: ChangeNameScreen,
-  ChangeEmail: ChangeEmailScreen
+  ChangeEmail: ChangeEmailScreen,
+  ChangeLocation: ChangeLocationScreen
 },
 {
   initialRouteName: 'Profile'
