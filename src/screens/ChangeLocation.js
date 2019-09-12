@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import SubHeaderScreen from './sub-screens/SubHeader';
 import styles from '../styling/styles';
+import MapView from 'react-native-maps'
 
 class ChangeLocationScreen extends Component {
   state = {
@@ -25,11 +26,17 @@ class ChangeLocationScreen extends Component {
     const {navigation} = this.props;
     const {name} = this.state;
     return (
-        <View style={{flex: 1}}>
-          <SubHeaderScreen title={'Change Location'} navigation={navigation} />
-
-        </View>
-      
+      <View style={{flex: 1}}>
+        <SubHeaderScreen title={'Change Location'} navigation={navigation} />
+        <MapView
+          initialRegion={{
+            latitude: 37.78825,
+            longitude: -122.4324,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421,
+          }}
+        />
+      </View>
     );
   }
 }
